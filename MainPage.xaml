@@ -22,6 +22,12 @@
                 HorizontalScrollMode="Enabled" 
                 VerticalScrollMode="Enabled"
                 SizeChanged="ScrollView_SizeChanged">
+                <WebView Width="Auto" Name="WebView" Source="http://gu-global.com">
+                    <WebView.RenderTransform>
+                        <ScaleTransform x:Name="ScaleTransform" ScaleX="1.0" ScaleY="1.0"></ScaleTransform>
+                    </WebView.RenderTransform>
+                </WebView>
+                <!--
                 <TextBlock
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
@@ -35,6 +41,7 @@
                         <ScaleTransform x:Name="ScaleTransform" ScaleX="1.0" ScaleY="1.0" />
                     </TextBlock.RenderTransform>
                 </TextBlock>
+                -->
             </ScrollViewer>
         </Grid>
     </Grid>
